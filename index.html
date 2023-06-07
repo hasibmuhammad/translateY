@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TranslateY</title>
+    <link rel="shortcut icon" href="logo.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="form">
+        <h1 class="f-4">TranslateY</h1>
+        <hr>
+        <form id="submitForm">
+            <br>
+            <div>
+                <label for="source">Source</label>
+                <select name="source" id="source" onchange="getSource(this)">
+                    <option value="en">English</option>
+                    <option value="bn">Bengali</option>
+                    <option value="hi">Hindi</option>
+                    <option value="es">Spanish</option>
+                    <option value="it">Italian</option>
+                    <option value="fr">French</option>
+                </select>
+                <label for="target">Target</label>
+                <select name="target" id="target" onchange="getTarget(this)">
+                    <option value="bn">Bengali</option>
+                    <option value="en">English</option>
+                    <option value="hi">Hindi</option>
+                    <option value="es">Spanish</option>
+                    <option value="it">Italian</option>
+                    <option value="fr">French</option>
+                </select>
+            </div>
+            <br>
+            <div>
+                <label for="text">Text</label>
+                <input onchange="getVal(this)" type="text" name="text" id="text" placeholder="Enter text in your source language">
+            </div>
+
+            <div id="result"></div>
+
+            <br>
+            <div class="btn">
+                <input class="btn-submit" type="submit" value="Translate" >
+            </div>
+           
+        </form>
+    </div>
+
+    <footer>
+        &copy; 2023 <a target="_blank" href="https://github.com/hasibmuhammad"> Hasib Muhammad</a> 
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>
